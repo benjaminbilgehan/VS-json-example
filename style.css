@@ -38,7 +38,6 @@ header {
 }
 
 .nav {
-
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -52,13 +51,14 @@ header {
 }
 
 section {
-  padding: 5rem 0 3rem;
+  padding: 4rem 0 3rem;
 }
 
 .section-title {
   font-size: 1.5rem;
   font-weight: 600;
   text-align: center;
+  margin-bottom: 1.5rem;
 }
 .logo {
   font-size: 1.1rem;
@@ -72,7 +72,25 @@ section {
   
 }
 
-.shop-content {
+.shop-content{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, auto));
+  gap: 1.5rem;
+  
+}
+
+.product-img {
+  height: 220px;
+  width: auto;
+}
+
+.product-box {
+  position: relative;
+padding: 10px;
+}
+
+.product-box:hover {
+  border: 1px solid var(--text-color);
+  transition: 0.4ms;
+  padding: 9px;
 }
